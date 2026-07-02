@@ -22,7 +22,7 @@ If the user's initial request is too vague to create a zero-speculation blueprin
 - Only proceed once the core technical choices are locked in.
 
 ### 3. The Blueprint Output Format
-Once you have the required context, you must create a file named `BLUEPRINT_[Feature_Or_App_Name].md` in the project root. This file MUST follow this exact structure:
+Once you have the required context, you must create a file named `BLUEPRINT_[FEATURE_NAME].md` in the project root, where `[FEATURE_NAME]` is in uppercase with underscores (e.g., if the feature is "read api", the file will be named `BLUEPRINT_READ_API.md`). This file MUST follow this exact structure:
 
 ```markdown
 # Architectural Blueprint: [Project/Feature Name]
@@ -71,5 +71,5 @@ Once you have the required context, you must create a file named `BLUEPRINT_[Fea
 ## Workflow for `/blueprint`
 1. Acknowledge the user's request.
 2. If necessary technical decisions are missing, present options and **ask for clarification**. Do not assume their stack.
-3. Once the path is clear, generate the `BLUEPRINT_[name].md` file using the strict template above.
+3. Once the path is clear, generate the `BLUEPRINT_[FEATURE_NAME].md` file (where `[FEATURE_NAME]` is in uppercase with underscores, e.g., `BLUEPRINT_READ_API.md`) using the strict template above.
 4. Inform the user the blueprint is ready and ask if they would like you to begin executing "Phase 1" of the generated document.
